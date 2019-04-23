@@ -1,0 +1,30 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.slick-slider .slick-active {
+  opacity: 0.55;
+  transition: all 0.3s;
+}
+
+.slick-slider .slick-active:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.slick-slide {
+  padding: 10px 0 !important;
+}
+
+.slide {
+  border: 1px solid rgb(232, 232, 232);
+}
+
+imageSelect {
+  border: 2px solid rgb(46, 46, 46);
+}
+imageSelect:hover {
+  border: 2px solid rgb(232, 232, 232);
+}
