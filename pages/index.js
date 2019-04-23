@@ -1,7 +1,8 @@
 import Home from "../components/Home";
 import Sidebar from "../components/Sidebar";
 import { push as Menu } from "react-burger-menu";
-import "../styles/sidebar.css";
+import { useState } from "react";
+
 import "../styles/index.css";
 
 const Index = () => (

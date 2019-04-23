@@ -1,6 +1,4 @@
-import Link from "next/link";
-
-const captainMrvel = () => {
+const captainMarvel = () => {
   return <div>captain marvel</div>;
 };
 
