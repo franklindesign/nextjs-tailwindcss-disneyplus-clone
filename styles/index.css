@@ -38,3 +38,9 @@
   width: 100%;
   z-index: 1;
 }
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

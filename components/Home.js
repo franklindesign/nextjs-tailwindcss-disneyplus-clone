@@ -5,9 +5,11 @@ import Categories from "./Categories";
 import "../node_modules/slick-carousel/slick/slick.css";
 import "../node_modules/slick-carousel/slick/slick.css";
 
+import Canvas from "./Canvas";
+
 const Home = () => {
   return (
-    <div className="my-8">
+    <div>
       <div className="my-12 pt-12">
         <HeroCarousel />
       </div>
