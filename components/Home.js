@@ -8,7 +8,7 @@ import "../node_modules/slick-carousel/slick/slick.css";
 const Home = () => {
   return (
     <div className="my-8">
-      <div className="mb-12">
+      <div className="my-12 pt-12">
         <HeroCarousel />
       </div>
       <div className="mb-12">

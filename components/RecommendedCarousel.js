@@ -70,7 +70,12 @@ const RecommendedCarousel = () => {
         </div>
         <div className="shadow-xl px-2 py-2">
           <Link href="/blackPanther">
-            <img src="./static/images/black_panther.jpg" alt="black_panther" />
+            <a>
+              <img
+                src="./static/images/black_panther.jpg"
+                alt="black_panther"
+              />
+            </a>
           </Link>
         </div>
         <div className="shadow-xl px-2 py-2">

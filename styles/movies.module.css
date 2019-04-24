@@ -1,0 +1,10 @@
+li {
+  padding-bottom: 0.5em;
+  padding-right: 3em;
+
+  color: rgb(179, 179, 179);
+}
+
+ul {
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
