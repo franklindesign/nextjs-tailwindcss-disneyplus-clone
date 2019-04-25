@@ -1,3 +1,5 @@
+import "../styles/disneynav.css";
+
 const Navbar = () => {
   return (
     <nav className="disney-nav flex justify-center mx-auto bg-gray-800 min-h-12 py-2">

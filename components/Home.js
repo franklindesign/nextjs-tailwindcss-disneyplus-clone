@@ -1,9 +1,10 @@
-import Link from "next/link";
 import HeroCarousel from "./Carousel";
 import RecommendedCarousel from "./RecommendedCarousel";
 import Categories from "./Categories";
 import "../node_modules/slick-carousel/slick/slick.css";
 import "../node_modules/slick-carousel/slick/slick.css";
+import "../styles/carousel.css";
+import "../styles/carousel.min.css";
 
 import Canvas from "./Canvas";
 

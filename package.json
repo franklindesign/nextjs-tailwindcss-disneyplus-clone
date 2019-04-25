@@ -13,12 +13,12 @@
     "react-dom": "^16.8.6",
     "react-responsive-carousel": "^3.1.49",
     "react-slick": "^0.24.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tailwindcss": "^1.0.0-beta.5"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "cssnano": "^4.1.10",
-    "postcss-easy-import": "^3.0.0",
-    "tailwindcss": "^1.0.0-beta.5"
+    "postcss-easy-import": "^3.0.0"
   }
 }

@@ -1,5 +1,3 @@
-import "../styles/index.css";
-
 /* Mouse trail adapted from a jQuery Codepen by Bryan C https://codepen.io/bryjch/pen/QEoXwA */
 // Mouse trail react version by Noah Yamamoto https://noahyamamoto.com/blog/mousetrailanimation
 

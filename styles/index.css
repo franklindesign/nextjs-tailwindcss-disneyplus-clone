@@ -4,43 +4,6 @@
 
 @tailwind utilities;
 
-.slick-slider .slick-active {
-  opacity: 0.65;
-  transition: all 0.3s;
-}
-
-.slick-slider .slick-active:hover {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-.slick-slide {
-  padding: 10px 0 !important;
-}
-
-.slide {
-  border: 1px solid rgb(43, 43, 43);
-}
-
-.carouselSelect {
-  transition: all 0.3s;
-  border: 2px solid #2d3748;
-}
-.carouselSelect:hover {
-  border: 2px solid rgb(232, 232, 232);
-
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.disney-nav {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
-canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
+body {
+  background: #1a202c;
 }

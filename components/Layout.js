@@ -1,15 +1,17 @@
 import Sidebar from "../components/Sidebar";
 import { push as Menu } from "react-burger-menu";
 import Navbar from "./Navbar";
-import DisneyFooter from "./DisneyFooter";
 
+import DisneyFooter from "./DisneyFooter";
 import Canvas from "./Canvas";
+import "../styles/canvas.css";
+import "../styles/disneynav.css";
 
 const Layout = props => {
   return (
     <div>
       <Navbar />
-      <Canvas style={{ maxWidth: "100%", maxHeight: "100vh" }} />
+
       <Menu
         width={300}
         pageWrapId={"page-wrap"}
@@ -18,7 +20,13 @@ const Layout = props => {
         <Sidebar />
       </Menu>
 
-      <div>{props.children}</div>
+      <div>
+        <div style={{ zIndex: 1 }}>{props.children}</div>
+
+        <div>
+          <Canvas style={{ maxWidth: "100%", maxHeight: "100vh" }} />
+        </div>
+      </div>
 
       <DisneyFooter />
     </div>

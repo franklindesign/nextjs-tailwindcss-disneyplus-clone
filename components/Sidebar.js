@@ -54,9 +54,7 @@ const Sidebar = () => {
               d="M17 11a1 1 0 0 1 0 2h-4v4a1 1 0 0 1-2 0v-4H7a1 1 0 0 1 0-2h4V7a1 1 0 0 1 2 0v4h4z"
             />
           </svg>
-          <span className="ml-8 uppercase">
-            <Link href="/blackPanther">Watchlist</Link>
-          </span>
+          <span className="ml-8 uppercase">Watchlist</span>
         </div>
         <div className="nav-item flex mb-8">
           <svg fill="currentColor" width="24" height="24" viewBox="0 0 24 24">

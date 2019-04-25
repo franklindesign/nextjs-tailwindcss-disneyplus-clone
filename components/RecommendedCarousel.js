@@ -42,7 +42,7 @@ const RecommendedCarousel = () => {
     <div>
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
-          <Link href="#">
+          <Link href="/CaptainMarvel">
             <img
               src="./static/images/avengers_infinity_war.jpg"
               alt="avengers_infinity_war"

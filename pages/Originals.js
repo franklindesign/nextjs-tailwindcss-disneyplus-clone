@@ -3,10 +3,7 @@ import "../styles/originals.module.css";
 
 const Originals = () => (
   <Layout>
-    <div
-      id="outer-container"
-      className="flex bg-gray-900 text-white min-h-screen"
-    >
+    <div id="outer-container" className="flex   text-white min-h-screen">
       <div id="page-wrap" className="w-full">
         <div className="container mx-auto mb-10 pb-10">
           <div className="pt-20 mt-20">

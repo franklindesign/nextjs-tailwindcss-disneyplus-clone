@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 
-const blackPanther = () => {
+const BlackPanther = () => {
   return (
     <Layout>
       <div
@@ -17,4 +17,4 @@ const blackPanther = () => {
   );
 };
 
-export default blackPanther;
+export default BlackPanther;
