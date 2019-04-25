@@ -1,9 +1,9 @@
-.Select {
+.select {
   opacity: 0.75;
   transition: all 0.3s;
   border: 2px solid #2d3748;
 }
-.Select:hover {
+.select:hover {
   border: 2px solid rgb(232, 232, 232);
   opacity: 1;
   transform: scale(1.05);

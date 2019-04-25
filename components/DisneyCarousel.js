@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Slider from "react-slick";
 
-const RecommendedCarousel = () => {
+const DisneyCarousel = () => {
   const settings = {
     infinite: false,
     arrows: false,
@@ -39,9 +39,9 @@ const RecommendedCarousel = () => {
     ]
   };
   return (
-    <div className="mt-20">
-      <div className="recommended  ml-2 mb-3">
-        <h2 className="text-gray-500 mb-1 font-light">Recommended For You</h2>
+    <div>
+      <div className="recommended ml-2 mb-3">
+        <h2 className="text-gray-500 mb-1 font-light">Disney</h2>
       </div>
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
@@ -62,10 +62,7 @@ const RecommendedCarousel = () => {
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img
-              src="./static/images/spiderman-homecoming.jpg"
-              alt="spiderman-homecoming"
-            />
+            <img src="./static/images/cinderella.jpg" alt="cinderella" />
           </a>
         </div>
 
@@ -75,10 +72,14 @@ const RecommendedCarousel = () => {
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
-          <img
-            src="./static/images/one_strange_rock.jpg"
-            alt="one_strange_rock"
-          />
+          <Link href="/blackPanther">
+            <a>
+              <img
+                src="./static/images/black_panther.jpg"
+                alt="black_panther"
+              />
+            </a>
+          </Link>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
@@ -90,4 +91,4 @@ const RecommendedCarousel = () => {
   );
 };
 
-export default RecommendedCarousel;
+export default DisneyCarousel;

@@ -1,4 +1,5 @@
 import { Carousel } from "react-responsive-carousel";
+import Link from "next/link";
 
 const HeroCarousel = () => {
   return (
@@ -9,7 +10,7 @@ const HeroCarousel = () => {
       autoPlay
       interval={3000}
       infiniteLoop
-      className="carouselSelect "
+      className="carouselSelect"
     >
       <div>
         <img src="./static/slides/slide3.jpg" alt="Avengers: Endgame" />
@@ -18,7 +19,11 @@ const HeroCarousel = () => {
         <img src="./static/slides/slide2.jpg" alt="Toy Story 4" />
       </div>
       <div>
-        <img src="./static/slides/slide4.jpg" alt="Captain Marvel" />
+        <Link href="/CaptainMarvel">
+          <a>
+            <img src="./static/slides/slide4.jpg" alt="Captain Marvel" />
+          </a>
+        </Link>
       </div>
       <div>
         <img src="./static/slides/slide1.jpg" alt="Mandalorian" />

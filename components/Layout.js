@@ -24,7 +24,7 @@ const Layout = props => {
         <div style={{ zIndex: 1 }}>{props.children}</div>
 
         <div>
-          <Canvas style={{ maxWidth: "100%", maxHeight: "100vh" }} />
+          <Canvas width="1600" height="1600" />
         </div>
       </div>
 

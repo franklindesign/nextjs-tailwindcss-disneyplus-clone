@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Slider from "react-slick";
 
-const RecommendedCarousel = () => {
+const ContinueWatching = () => {
   const settings = {
     infinite: false,
     arrows: false,
@@ -39,50 +39,56 @@ const RecommendedCarousel = () => {
     ]
   };
   return (
-    <div className="mt-20">
-      <div className="recommended  ml-2 mb-3">
-        <h2 className="text-gray-500 mb-1 font-light">Recommended For You</h2>
+    <div>
+      <div className="recommended ml-2 mb-3">
+        <h2 className="text-gray-500 mb-1 font-light">Continue Watching</h2>
       </div>
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
           <Link href="/CaptainMarvel">
             <img
-              src="./static/images/avengers_infinity_war.jpg"
-              alt="avengers_infinity_war"
+              src="./static/images/marvel-captain-marvel.jpg"
+              alt="marvel-captain-marvel"
             />
           </Link>
+          <div className="h-1 bg-blue-500 w-12" />
+        </div>
+        <div className="shadow-xl px-2 py-2">
+          <a href="#">
+            <img src="./static/images/thor-ragnarok.jpg" alt="thor-ragnarok" />
+          </a>
+          <div className="h-1 bg-blue-500 w-4" />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
             <img
-              src="./static/images/star_wars_a_new_hope.jpg"
-              alt="star_wars_a_new_hope"
+              src="./static/images/pixar-toy-story.jpg"
+              alt="pixar-toy-story"
             />
           </a>
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img
-              src="./static/images/spiderman-homecoming.jpg"
-              alt="spiderman-homecoming"
-            />
-          </a>
+          <div className="h-1 bg-blue-500 w-5" />
         </div>
 
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/snow_white.jpg" alt="snow_white" />
+            <img
+              src="./static/images/disney-lion-king.jpg"
+              alt="disney-lion-king"
+            />
           </a>
+          <div className="h-1 bg-blue-500 w-16" />
         </div>
         <div className="shadow-xl px-2 py-2">
-          <img
-            src="./static/images/one_strange_rock.jpg"
-            alt="one_strange_rock"
-          />
+          <Link href="#">
+            <a>
+              <img src="./static/images/disney-mulan.jpg" alt="disney-mulan" />
+              <div className="h-1 bg-blue-500 w-12" />
+            </a>
+          </Link>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/zootopia.jpg" alt="zootopia" />
+            <img src="./static/images/free-solo.jpg" alt="free-solo" />
           </a>
         </div>
       </Slider>
@@ -90,4 +96,4 @@ const RecommendedCarousel = () => {
   );
 };
 
-export default RecommendedCarousel;
+export default ContinueWatching;

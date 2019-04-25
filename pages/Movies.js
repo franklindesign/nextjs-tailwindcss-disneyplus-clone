@@ -1,5 +1,10 @@
 import Layout from "../components/Layout";
 
+import RecommendedCarousel from "../components/RecommendedCarousel";
+import TrendingNow from "../components/TrendingNow";
+
+import DisneyOriginals from "../components/DisneyOriginals";
+
 const Movies = () => (
   <Layout>
     <div id="outer-container" className="flex text-white min-h-screen">
@@ -57,6 +62,16 @@ const Movies = () => (
                 border-bottom: 1px solid rgb(211, 211, 211);
               }
             `}</style>
+
+            <div>
+              <RecommendedCarousel />
+            </div>
+            <div>
+              <TrendingNow />
+            </div>
+            <div>
+              <DisneyOriginals />
+            </div>
           </div>
         </div>
       </div>

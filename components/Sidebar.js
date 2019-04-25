@@ -24,12 +24,14 @@ const Sidebar = () => {
                 d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
               />
             </svg>
-            <span className="ml-8  uppercase">
-              <div>search</div>
+            <span className="ml-8">
+              <Link href="/">
+                <a className="uppercase">Search</a>
+              </Link>
             </span>
           </div>
         </div>
-        <div className="nav-item flex   mb-8">
+        <div className="nav-item flex mb-8">
           <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
             <path
               className="primary"
@@ -41,9 +43,9 @@ const Sidebar = () => {
             />
           </svg>
           <span className="ml-8">
-            <div className="uppercase">
-              <Link href="/">Home</Link>
-            </div>
+            <Link href="/">
+              <a className="uppercase">Home</a>
+            </Link>
           </span>
         </div>
         <div className="nav-item flex mb-8">
@@ -54,24 +56,32 @@ const Sidebar = () => {
               d="M17 11a1 1 0 0 1 0 2h-4v4a1 1 0 0 1-2 0v-4H7a1 1 0 0 1 0-2h4V7a1 1 0 0 1 2 0v4h4z"
             />
           </svg>
-          <span className="ml-8 uppercase">Watchlist</span>
+          <span className="ml-8">
+            <Link href="/">
+              <a className="uppercase">Watchlist</a>
+            </Link>
+          </span>
         </div>
         <div className="nav-item flex mb-8">
           <svg fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
             <path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z" />
             <path d="M0 0h24v24H0z" fill="none" />
           </svg>
-          <span className="ml-8 uppercase">
-            <Link href="/movies">Movies</Link>
+          <span className="ml-8 ">
+            <Link href="/movies">
+              <a className="uppercase">Movies</a>
+            </Link>
           </span>
         </div>
         <div className="flex mb-8">
           <svg fill="currentColor" width="24" height="24">
             <path d="M21 6h-8.586l2.293-2.293-1.414-1.414L10 5.586 6.707 2.293 5.293 3.707 7.586 6H3a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-1 3v2h-2V9h2zm-2 4h2v2h-2v-2zM4 8h11v10H4V8z" />
           </svg>
-          <span className="ml-8 uppercase">
+          <span className="ml-8 ">
             <div>
-              <a>Series </a>
+              <Link href="/">
+                <a className="uppercase">Series</a>
+              </Link>
             </div>
           </span>
         </div>
@@ -81,13 +91,15 @@ const Sidebar = () => {
             <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
             <path d="M0 0h24v24H0z" fill="none" />
           </svg>
-          <span className="ml-8 uppercase">
+          <span className="ml-8 ">
             <div>
-              <Link href="/Originals">Originals</Link>
+              <Link href="/Originals">
+                <a className="uppercase">Originals</a>
+              </Link>
             </div>
           </span>
         </div>
-        <div className="flex   mb-8">
+        <div className="flex mb-8">
           <svg
             fill="currentColor"
             viewBox="0 0 24 24"
@@ -101,9 +113,11 @@ const Sidebar = () => {
             />
             <circle cx="12" cy="12" r="2" className="secondary" />
           </svg>
-          <span className="ml-8 uppercase">
+          <span className="ml-8 ">
             <div>
-              <a>Settings</a>
+              <Link href="/">
+                <a className="uppercase">Settings</a>
+              </Link>
             </div>
           </span>
         </div>
