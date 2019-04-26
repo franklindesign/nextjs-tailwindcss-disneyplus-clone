@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Slider from "react-slick";
 
 const DisneyOriginals = () => {
@@ -45,12 +44,10 @@ const DisneyOriginals = () => {
       </div>
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
-          <Link href="/CaptainMarvel">
-            <img
-              src="./static/originals/high-school-musical.jpg"
-              alt="high-school-musical"
-            />
-          </Link>
+          <img
+            src="./static/originals/high-school-musical.jpg"
+            alt="high-school-musical"
+          />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">

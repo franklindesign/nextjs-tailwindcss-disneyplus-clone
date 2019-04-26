@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Router from "next/router";
 import Slider from "react-slick";
 
 const DisneyCarousel = () => {
@@ -45,12 +45,12 @@ const DisneyCarousel = () => {
       </div>
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
-          <Link href="/CaptainMarvel">
-            <img
-              src="./static/images/avengers_infinity_war.jpg"
-              alt="avengers_infinity_war"
-            />
-          </Link>
+          <img
+            onClick={() => Router.push("/Originals")}
+            className="cursor-pointer"
+            src="./static/images/avengers_infinity_war.jpg"
+            alt="avengers_infinity_war"
+          />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
@@ -72,14 +72,7 @@ const DisneyCarousel = () => {
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
-          <Link href="/blackPanther">
-            <a>
-              <img
-                src="./static/images/black_panther.jpg"
-                alt="black_panther"
-              />
-            </a>
-          </Link>
+          <img src="./static/images/black_panther.jpg" alt="black_panther" />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">

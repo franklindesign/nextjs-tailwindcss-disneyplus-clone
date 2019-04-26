@@ -1,5 +1,5 @@
 import { Carousel } from "react-responsive-carousel";
-import Link from "next/link";
+import Router from "next/router";
 
 const HeroCarousel = () => {
   return (
@@ -19,11 +19,12 @@ const HeroCarousel = () => {
         <img src="./static/slides/slide2.jpg" alt="Toy Story 4" />
       </div>
       <div>
-        <Link href="/CaptainMarvel">
-          <a>
-            <img src="./static/slides/slide4.jpg" alt="Captain Marvel" />
-          </a>
-        </Link>
+        <img
+          onClick={() => Router.push("/CaptainMarvel")}
+          className=" cursor-pointer"
+          src="./static/slides/slide4.jpg"
+          alt="Captain Marvel"
+        />
       </div>
       <div>
         <img src="./static/slides/slide1.jpg" alt="Mandalorian" />

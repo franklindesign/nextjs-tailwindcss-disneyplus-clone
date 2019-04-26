@@ -14,10 +14,7 @@ const Originals = () => (
                   alt="disneyplus_logo"
                   width="200px"
                 />
-                <div
-                  className="text-xs font-semibold uppercase ml-8 mb-10 pb-5"
-                  style={{ letterSpacing: ".8em" }}
-                >
+                <div className="title text-xs font-semibold uppercase ml-8 mb-10 pb-5">
                   Originals
                 </div>
               </div>

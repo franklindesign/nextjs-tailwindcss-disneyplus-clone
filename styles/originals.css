@@ -9,3 +9,7 @@
   transform: scale(1.05);
   cursor: pointer;
 }
+
+.title {
+  letter-spacing: 0.8em;
+}

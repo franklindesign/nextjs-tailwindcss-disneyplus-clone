@@ -1,5 +1,6 @@
 import "../styles/sidebar.css";
-import Link from "next/link";
+
+import Router from "next/router";
 
 const Sidebar = () => {
   return (
@@ -25,9 +26,9 @@ const Sidebar = () => {
               />
             </svg>
             <span className="ml-8">
-              <Link href="/">
-                <a className="uppercase">Search</a>
-              </Link>
+              <a className="uppercase" href="#">
+                Search
+              </a>
             </span>
           </div>
         </div>
@@ -43,9 +44,12 @@ const Sidebar = () => {
             />
           </svg>
           <span className="ml-8">
-            <Link href="/">
-              <a className="uppercase">Home</a>
-            </Link>
+            <a
+              onClick={() => Router.push("/")}
+              className="uppercase cursor-pointer"
+            >
+              Home
+            </a>
           </span>
         </div>
         <div className="nav-item flex mb-8">
@@ -57,9 +61,7 @@ const Sidebar = () => {
             />
           </svg>
           <span className="ml-8">
-            <Link href="/">
-              <a className="uppercase">Watchlist</a>
-            </Link>
+            <a className="uppercase">Watchlist</a>
           </span>
         </div>
         <div className="nav-item flex mb-8">
@@ -68,9 +70,12 @@ const Sidebar = () => {
             <path d="M0 0h24v24H0z" fill="none" />
           </svg>
           <span className="ml-8 ">
-            <Link href="/movies">
-              <a className="uppercase">Movies</a>
-            </Link>
+            <span
+              onClick={() => Router.push("/Movies")}
+              className="uppercase cursor-pointer"
+            >
+              Movies
+            </span>
           </span>
         </div>
         <div className="flex mb-8">
@@ -79,9 +84,7 @@ const Sidebar = () => {
           </svg>
           <span className="ml-8 ">
             <div>
-              <Link href="/">
-                <a className="uppercase">Series</a>
-              </Link>
+              <a className="uppercase">Series</a>
             </div>
           </span>
         </div>
@@ -93,9 +96,12 @@ const Sidebar = () => {
           </svg>
           <span className="ml-8 ">
             <div>
-              <Link href="/Originals">
-                <a className="uppercase">Originals</a>
-              </Link>
+              <span
+                onClick={() => Router.push("/Originals")}
+                className="uppercase cursor-pointer"
+              >
+                Originals
+              </span>
             </div>
           </span>
         </div>
@@ -115,9 +121,7 @@ const Sidebar = () => {
           </svg>
           <span className="ml-8 ">
             <div>
-              <Link href="/">
-                <a className="uppercase">Settings</a>
-              </Link>
+              <a className="uppercase">Settings</a>
             </div>
           </span>
         </div>

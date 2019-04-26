@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Router from "next/router";
 import Slider from "react-slick";
 
 const ContinueWatching = () => {
@@ -45,12 +45,12 @@ const ContinueWatching = () => {
       </div>
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
-          <Link href="/CaptainMarvel">
-            <img
-              src="./static/images/marvel-captain-marvel.jpg"
-              alt="marvel-captain-marvel"
-            />
-          </Link>
+          <img
+            onClick={() => Router.push("/CaptainMarvel")}
+            src="./static/images/marvel-captain-marvel.jpg"
+            alt="marvel-captain-marvel"
+          />
+
           <div className="h-1 bg-blue-500 w-12" />
         </div>
         <div className="shadow-xl px-2 py-2">
@@ -79,12 +79,10 @@ const ContinueWatching = () => {
           <div className="h-1 bg-blue-500 w-16" />
         </div>
         <div className="shadow-xl px-2 py-2">
-          <Link href="#">
-            <a>
-              <img src="./static/images/disney-mulan.jpg" alt="disney-mulan" />
-              <div className="h-1 bg-blue-500 w-12" />
-            </a>
-          </Link>
+          <a>
+            <img src="./static/images/disney-mulan.jpg" alt="disney-mulan" />
+            <div className="h-1 bg-blue-500 w-12" />
+          </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
