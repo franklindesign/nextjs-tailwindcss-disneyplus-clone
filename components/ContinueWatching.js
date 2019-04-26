@@ -47,7 +47,7 @@ const ContinueWatching = () => {
         <div className="shadow-xl px-2 py-2">
           <img
             onClick={() => Router.push("/CaptainMarvel")}
-            src="./static/images/marvel-captain-marvel.jpg"
+            src="/static/images/marvel-captain-marvel.jpg"
             alt="marvel-captain-marvel"
           />
 
@@ -55,14 +55,14 @@ const ContinueWatching = () => {
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/thor-ragnarok.jpg" alt="thor-ragnarok" />
+            <img src="/static/images/thor-ragnarok.jpg" alt="thor-ragnarok" />
           </a>
           <div className="h-1 bg-blue-500 w-4" />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
             <img
-              src="./static/images/pixar-toy-story.jpg"
+              src="/static/images/pixar-toy-story.jpg"
               alt="pixar-toy-story"
             />
           </a>
@@ -72,7 +72,7 @@ const ContinueWatching = () => {
         <div className="shadow-xl px-2 py-2">
           <a href="#">
             <img
-              src="./static/images/disney-lion-king.jpg"
+              src="/static/images/disney-lion-king.jpg"
               alt="disney-lion-king"
             />
           </a>
@@ -80,13 +80,13 @@ const ContinueWatching = () => {
         </div>
         <div className="shadow-xl px-2 py-2">
           <a>
-            <img src="./static/images/disney-mulan.jpg" alt="disney-mulan" />
+            <img src="/static/images/disney-mulan.jpg" alt="disney-mulan" />
             <div className="h-1 bg-blue-500 w-12" />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/free-solo.jpg" alt="free-solo" />
+            <img src="/static/images/free-solo.jpg" alt="free-solo" />
           </a>
         </div>
       </Slider>

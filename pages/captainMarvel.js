@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 
 const background = {
   root: {
-    background: `url("../static/background/captain-marvel.jpg")`
+    background: `url("/static/background/captain-marvel.jpg")`
   }
 };
 
@@ -14,7 +14,7 @@ const CaptainMarvel = () => (
           <div
             className="mt-10 pt-10"
             style={{
-              backgroundImage: "url(../static/background/captain-marvel.jpg)",
+              backgroundImage: "url(/static/background/captain-marvel.jpg)",
               backgroundPosition: "center top",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -24,7 +24,7 @@ const CaptainMarvel = () => (
             <div className="mt-20">
               <img
                 className="lg:ml-10 ml-2 mt-20 pt-10"
-                src="../static/background/captain-marvel-logo.png"
+                src="/static/background/captain-marvel-logo.png"
                 alt="captain-marvel-logo"
               />
             </div>

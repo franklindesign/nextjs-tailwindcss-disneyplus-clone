@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Slider from "react-slick";
 
 const RecommendedCarousel = () => {
@@ -45,17 +44,15 @@ const RecommendedCarousel = () => {
       </div>
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
-          <Link href="/CaptainMarvel">
-            <img
-              src="./static/images/avengers_infinity_war.jpg"
-              alt="avengers_infinity_war"
-            />
-          </Link>
+          <img
+            src="/static/images/avengers_infinity_war.jpg"
+            alt="avengers_infinity_war"
+          />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
             <img
-              src="./static/images/star_wars_a_new_hope.jpg"
+              src="/static/images/star_wars_a_new_hope.jpg"
               alt="star_wars_a_new_hope"
             />
           </a>
@@ -63,7 +60,7 @@ const RecommendedCarousel = () => {
         <div className="shadow-xl px-2 py-2">
           <a href="#">
             <img
-              src="./static/images/spiderman-homecoming.jpg"
+              src="/static/images/spiderman-homecoming.jpg"
               alt="spiderman-homecoming"
             />
           </a>
@@ -71,18 +68,18 @@ const RecommendedCarousel = () => {
 
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/snow_white.jpg" alt="snow_white" />
+            <img src="/static/images/snow_white.jpg" alt="snow_white" />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <img
-            src="./static/images/one_strange_rock.jpg"
+            src="/static/images/one_strange_rock.jpg"
             alt="one_strange_rock"
           />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/zootopia.jpg" alt="zootopia" />
+            <img src="/static/images/zootopia.jpg" alt="zootopia" />
           </a>
         </div>
       </Slider>

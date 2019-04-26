@@ -1,6 +1,5 @@
-import "../styles/sidebar.css";
-
 import Router from "next/router";
+import "../styles/sidebar.css";
 
 const Sidebar = () => {
   return (
@@ -8,7 +7,7 @@ const Sidebar = () => {
       <div className="flex mb-12  items-center">
         <div>
           <img
-            src="./static/images/avatar.jpg"
+            src="/static/images/avatar.jpg"
             alt="avatar"
             className="rounded-full w-12 h-12"
           />
@@ -127,7 +126,7 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="ml-10 mt-10">
-        <img src="./static/logos/disneyplus_logo.svg" alt="disneyplus_logo" />
+        <img src="/static/logos/disneyplus_logo.svg" alt="disneyplus_logo" />
       </div>
     </div>
   );

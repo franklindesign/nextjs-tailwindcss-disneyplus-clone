@@ -53,29 +53,29 @@ const ActionAdventure = () => {
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/disney-tarzan.jpg" alt="disney-tarzan" />
+            <img src="/static/images/disney-tarzan.jpg" alt="disney-tarzan" />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <img
-            src="./static/images/marvel-guardians-of-the-galaxy.jpg"
+            src="/static/images/marvel-guardians-of-the-galaxy.jpg"
             alt="marvel-guardians-of-the-galaxy.jpg"
           />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
             <img
-              src="./static/images/pixar-incredibles.jpg"
+              src="/static/images/pixar-incredibles.jpg"
               alt="pixar-incredibles"
             />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
-          <img src="./static/images/marvel-ironman.jpg" alt="marvel-ironman" />
+          <img src="/static/images/marvel-ironman.jpg" alt="marvel-ironman" />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/zootopia.jpg" alt="zootopia" />
+            <img src="/static/images/zootopia.jpg" alt="zootopia" />
           </a>
         </div>
       </Slider>

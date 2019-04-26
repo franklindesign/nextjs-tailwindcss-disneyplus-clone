@@ -13,21 +13,21 @@ const HeroCarousel = () => {
       className="carouselSelect"
     >
       <div>
-        <img src="./static/slides/slide3.jpg" alt="Avengers: Endgame" />
+        <img src="/static/slides/slide3.jpg" alt="Avengers: Endgame" />
       </div>
       <div>
-        <img src="./static/slides/slide2.jpg" alt="Toy Story 4" />
+        <img src="/static/slides/slide2.jpg" alt="Toy Story 4" />
       </div>
       <div>
         <img
           onClick={() => Router.push("/CaptainMarvel")}
           className=" cursor-pointer"
-          src="./static/slides/slide4.jpg"
+          src="/static/slides/slide4.jpg"
           alt="Captain Marvel"
         />
       </div>
       <div>
-        <img src="./static/slides/slide1.jpg" alt="Mandalorian" />
+        <img src="/static/slides/slide1.jpg" alt="Mandalorian" />
       </div>
     </Carousel>
   );

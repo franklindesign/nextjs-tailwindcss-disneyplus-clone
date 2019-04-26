@@ -10,7 +10,7 @@ const Originals = () => (
             <div className=" flex mx-auto justify-center">
               <div className="flex flex-col mx-auto justify-center">
                 <img
-                  src="../static/logos/disneyplus_logo.svg"
+                  src="/static/logos/disneyplus_logo.svg"
                   alt="disneyplus_logo"
                   width="200px"
                 />
@@ -22,21 +22,21 @@ const Originals = () => (
             <div className="flex flex-wrap flex-col md:flex-row lg:flex-row ">
               <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2">
                 <img
-                  src="../static/originals/the-mandalorian.jpg"
+                  src="/static/originals/the-mandalorian.jpg"
                   alt="the-mandalorian"
                   className="select"
                 />
               </div>
               <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2">
                 <img
-                  src="../static/originals/lady-and-the-tramp.jpg"
+                  src="/static/originals/lady-and-the-tramp.jpg"
                   alt="lady-and-the-tramp"
                   className="select"
                 />
               </div>
               <div className="sm:w-1/1 md:w-1/2 lg:w-1/3 px-2 my-2">
                 <img
-                  src="../static/originals/hero-project.jpg"
+                  src="/static/originals/hero-project.jpg"
                   alt="hero-project"
                   className="select"
                 />
@@ -44,21 +44,21 @@ const Originals = () => (
 
               <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2">
                 <img
-                  src="../static/originals/encore.jpg"
+                  src="/static/originals/encore.jpg"
                   alt="encore"
                   className="select"
                 />
               </div>
               <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2 ">
                 <img
-                  src="../static/originals/high-school-musical.jpg"
+                  src="/static/originals/high-school-musical.jpg"
                   alt="high-school-musical"
                   className="select"
                 />
               </div>
               <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2">
                 <img
-                  src="../static/originals/the-world-according-to-jeff-goldblum.jpg"
+                  src="/static/originals/the-world-according-to-jeff-goldblum.jpg"
                   alt="the-world-according-to-jeff-goldblum"
                   className="select"
                 />

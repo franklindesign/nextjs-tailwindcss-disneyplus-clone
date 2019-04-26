@@ -1,8 +1,6 @@
 import Layout from "../components/Layout";
-
 import RecommendedCarousel from "../components/RecommendedCarousel";
 import TrendingNow from "../components/TrendingNow";
-
 import DisneyOriginals from "../components/DisneyOriginals";
 
 const Movies = () => (
@@ -63,15 +61,9 @@ const Movies = () => (
               }
             `}</style>
 
-            <div>
-              <RecommendedCarousel />
-            </div>
-            <div>
-              <TrendingNow />
-            </div>
-            <div>
-              <DisneyOriginals />
-            </div>
+            <RecommendedCarousel />
+            <TrendingNow />
+            <DisneyOriginals />
           </div>
         </div>
       </div>

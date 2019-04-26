@@ -45,14 +45,14 @@ const DisneyOriginals = () => {
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
           <img
-            src="./static/originals/high-school-musical.jpg"
+            src="/static/originals/high-school-musical.jpg"
             alt="high-school-musical"
           />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
             <img
-              src="./static/originals/lady-and-the-tramp.jpg"
+              src="/static/originals/lady-and-the-tramp.jpg"
               alt="lady-and-the-tramp"
             />
           </a>
@@ -60,7 +60,7 @@ const DisneyOriginals = () => {
         <div className="shadow-xl px-2 py-2">
           <a href="#">
             <img
-              src="./static/originals/the-mandalorian.jpg"
+              src="/static/originals/the-mandalorian.jpg"
               alt="the-mandalorian"
             />
           </a>
@@ -69,16 +69,16 @@ const DisneyOriginals = () => {
         <div className="shadow-xl px-2 py-2">
           <a href="#">
             <img
-              src="./static/originals/the-world-according-to-jeff-goldblum.jpg"
+              src="/static/originals/the-world-according-to-jeff-goldblum.jpg"
               alt="the-world-according-to-jeff-goldblum"
             />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
-          <img src="./static/originals/encore.jpg" alt="encore" />
+          <img src="/static/originals/encore.jpg" alt="encore" />
         </div>
         <div className="shadow-xl px-2 py-2">
-          <img src="./static/originals/hero-project.jpg" alt="hero-project" />
+          <img src="/static/originals/hero-project.jpg" alt="hero-project" />
         </div>
       </Slider>
     </div>

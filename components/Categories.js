@@ -42,28 +42,28 @@ const Categories = () => {
       <Slider {...settings}>
         <div className="px-4 pb-6">
           <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom">
-            <img src="./static/logos/disney_logo.svg" alt="disney" />
+            <img src="/static/logos/disney_logo.svg" alt="disney" />
           </a>
         </div>
         <div className=" px-4 pb-6">
           <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom">
-            <img src="./static/logos/pixar_logo.svg" alt="pixar_logo" />
+            <img src="/static/logos/pixar_logo.svg" alt="pixar_logo" />
           </a>
         </div>
         <div className=" px-4 pb-6">
           <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom">
-            <img src="./static/logos/marvel_logo.svg" alt="marvel_logo" />
+            <img src="/static/logos/marvel_logo.svg" alt="marvel_logo" />
           </a>
         </div>
         <div className=" px-4 pb-6">
           <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom">
-            <img src="./static/logos/star_wars_logo.svg" alt="star_wars_logo" />
+            <img src="/static/logos/star_wars_logo.svg" alt="star_wars_logo" />
           </a>
         </div>
         <div className="  px-4 pb-6">
           <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom">
             <img
-              src="./static/logos/national_geographic_logo.svg"
+              src="/static/logos/national_geographic_logo.svg"
               alt="national_geographic_logo"
             />
           </a>

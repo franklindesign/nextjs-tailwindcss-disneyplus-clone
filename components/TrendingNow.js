@@ -44,29 +44,29 @@ const TrendingNow = () => {
       </div>
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
-          <img src="./static/images/pixar-coco.jpg" alt="pixar-coco" />
+          <img src="/static/images/pixar-coco.jpg" alt="pixar-coco" />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/pixar-bao.jpg" alt="pixar-bao" />
+            <img src="/static/images/pixar-bao.jpg" alt="pixar-bao" />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/disney-bambi.jpg" alt="disney-bambi" />
+            <img src="/static/images/disney-bambi.jpg" alt="disney-bambi" />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/zootopia.jpg" alt="zootopia" />
+            <img src="/static/images/zootopia.jpg" alt="zootopia" />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
-          <img src="./static/images/black_panther.jpg" alt="black_panther" />
+          <img src="/static/images/black_panther.jpg" alt="black_panther" />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/snow_white.jpg" alt="snow_white" />
+            <img src="/static/images/snow_white.jpg" alt="snow_white" />
           </a>
         </div>
       </Slider>

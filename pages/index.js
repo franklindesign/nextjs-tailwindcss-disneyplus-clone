@@ -1,7 +1,6 @@
 import Home from "../components/Home";
-
-import "../styles/index.css";
 import Layout from "../components/Layout";
+import "../styles/index.css";
 
 const Index = () => (
   <Layout>

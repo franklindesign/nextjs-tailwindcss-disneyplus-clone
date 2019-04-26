@@ -48,35 +48,35 @@ const DisneyCarousel = () => {
           <img
             onClick={() => Router.push("/Originals")}
             className="cursor-pointer"
-            src="./static/images/avengers_infinity_war.jpg"
+            src="/static/images/avengers_infinity_war.jpg"
             alt="avengers_infinity_war"
           />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
             <img
-              src="./static/images/star_wars_a_new_hope.jpg"
+              src="/static/images/star_wars_a_new_hope.jpg"
               alt="star_wars_a_new_hope"
             />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/cinderella.jpg" alt="cinderella" />
+            <img src="/static/images/cinderella.jpg" alt="cinderella" />
           </a>
         </div>
 
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/snow_white.jpg" alt="snow_white" />
+            <img src="/static/images/snow_white.jpg" alt="snow_white" />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
-          <img src="./static/images/black_panther.jpg" alt="black_panther" />
+          <img src="/static/images/black_panther.jpg" alt="black_panther" />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="./static/images/zootopia.jpg" alt="zootopia" />
+            <img src="/static/images/zootopia.jpg" alt="zootopia" />
           </a>
         </div>
       </Slider>
