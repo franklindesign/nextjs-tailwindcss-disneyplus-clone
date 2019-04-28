@@ -25,7 +25,10 @@ const Sidebar = () => {
               />
             </svg>
             <span className="ml-8">
-              <a className="uppercase" href="#">
+              <a
+                onClick={() => Router.push("/Search")}
+                className="uppercase cursor-pointer"
+              >
                 Search
               </a>
             </span>
@@ -60,7 +63,12 @@ const Sidebar = () => {
             />
           </svg>
           <span className="ml-8">
-            <a className="uppercase">Watchlist</a>
+            <a
+              onClick={() => Router.push("/Watchlist")}
+              className="uppercase cursor-pointer"
+            >
+              Watchlist
+            </a>
           </span>
         </div>
         <div className="nav-item flex mb-8">
@@ -83,7 +91,12 @@ const Sidebar = () => {
           </svg>
           <span className="ml-8 ">
             <div>
-              <a className="uppercase">Series</a>
+              <span
+                onClick={() => Router.push("/Series")}
+                className="uppercase cursor-pointer"
+              >
+                Series
+              </span>
             </div>
           </span>
         </div>
@@ -120,7 +133,12 @@ const Sidebar = () => {
           </svg>
           <span className="ml-8 ">
             <div>
-              <a className="uppercase">Settings</a>
+              <span
+                onClick={() => Router.push("/Settings")}
+                className="uppercase cursor-pointer"
+              >
+                Settings
+              </span>
             </div>
           </span>
         </div>

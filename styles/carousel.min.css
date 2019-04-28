@@ -203,9 +203,9 @@
   transition: all 0.5s ease-in-out;
   position: absolute;
   bottom: 40px;
-  left: 50%;
-  margin-left: -45%;
-  width: 90%;
+  right: 50%;
+  margin-right: -48%;
+  width: 10%;
   border-radius: 10px;
   background: #000;
   color: #fff;
@@ -222,9 +222,15 @@
 .carousel .control-dots {
   position: absolute;
   bottom: 0;
+  right: 50px;
+  text-align: right;
   margin: 10px 0;
-  text-align: center;
   width: 100%;
+}
+@media only screen and (max-width: 450px) {
+  .carousel .control-dots {
+    display: none;
+  }
 }
 @media (min-width: 960px) {
   .carousel .control-dots {
