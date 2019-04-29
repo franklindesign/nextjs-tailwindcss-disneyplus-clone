@@ -48,7 +48,9 @@ const Settings = () => (
                   <a href="#">Terms of Use</a>
                 </li>
               </ul>
-              <button className="mt-6 p-2 bg-white text-black">Sign Out</button>
+              <button className="mt-8 mb-10 p-2 w-40  text-center text-black  bg-white rounded">
+                Sign Out
+              </button>
             </div>
             <p className="text-sm mt-10">Version 0.0.0.1</p>
           </div>

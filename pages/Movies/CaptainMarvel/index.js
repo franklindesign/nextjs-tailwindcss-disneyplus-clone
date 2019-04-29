@@ -27,7 +27,11 @@ const CaptainMarvel = () => (
               />
             </div>
             <div className="flex mt-10 sm:mt-20">
-              <button
+              <button className="w-1/2 sm:w-1/6 text-black bg-white h-12 ml-10 uppercase sm:ml-20 playbutton">
+                Continue Watching
+              </button>
+
+              {/* <button
                 className="ml-10 uppercase sm:ml-20 playbutton"
                 style={{
                   color: "black",
@@ -37,8 +41,8 @@ const CaptainMarvel = () => (
                 }}
               >
                 Play
-              </button>
-              <button
+              </button> */}
+              {/* <button
                 className="uppercase font-thin text-xs"
                 style={{
                   color: "white",
@@ -48,7 +52,7 @@ const CaptainMarvel = () => (
                 }}
               >
                 + Add to watchlist
-              </button>
+              </button> */}
             </div>
 
             <p className="text-lg leading-relaxed mr-10 ml-10 md:ml-20 mt-10 xs:w-1/2    md:w-1/3 bg-black opacity-100 p-5">
@@ -58,11 +62,12 @@ const CaptainMarvel = () => (
               universe's most powerful heroes.
             </p>
           </div>
-          <div className="mt-16 md:mx-10 mx-5">
+          <div className="h-1 bg-blue-500 w-1/5 hidden lg:flex" />
+          <div className="mt-20 px-5">
             <Dropdown
               options={options}
               placeholder="Select Section"
-              className="sm:hidden  "
+              className="sm:hidden mt-40"
             />
             <ul className="md:flex md:mx-10 font-semibold hidden  ">
               <li className="pr-10 cursor-pointer">
@@ -76,9 +81,7 @@ const CaptainMarvel = () => (
               </li>
               <hr />
             </ul>
-            <div className="mx-10">
-              <CaptainAmericaScreens />
-            </div>
+            <CaptainAmericaScreens />
           </div>
 
           <style jsx>
