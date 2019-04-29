@@ -12,8 +12,14 @@ const Sidebar = () => {
             className="rounded-full w-12 h-12"
           />
         </div>
-
-        <div className="ml-4 text-gray-500 hover:text-gray-100">Franklin</div>
+        <div className="ml-4 text-gray-500 hover:text-gray-100">
+          <a
+            onClick={() => Router.push("/Settings")}
+            className=" cursor-pointer"
+          >
+            Franklin
+          </a>
+        </div>
       </div>
       <div className="ml-3">
         <div>

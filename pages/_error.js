@@ -14,31 +14,14 @@ const ErrorPage = () => (
               Oops...
             </span>
             <p>Looks like you are in the wrong page.</p>
-            <a
-              onClick={() => Router.push("/Home")}
-              className="mt-4 uppercase cursor-pointer"
-            >
-              Go back Home
-            </a>
-          </div>
-          <div className="mt-5">
-            <style jsx>{`
-              span:hover {
-                padding-bottom: 0.6em;
-                color: white;
-                border-bottom: 3px solid white;
-              }
-              li {
-                padding-bottom: 0.5em;
-                padding-right: 3em;
-
-                color: rgb(179, 179, 179);
-              }
-
-              ul {
-                border-bottom: 1px solid rgb(211, 211, 211);
-              }
-            `}</style>
+            <div className="mt-5">
+              <a
+                onClick={() => Router.push("/")}
+                className="uppercase cursor-pointer"
+              >
+                ← Go back Home
+              </a>
+            </div>
           </div>
         </div>
       </div>

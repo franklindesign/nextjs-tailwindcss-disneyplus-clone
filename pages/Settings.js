@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Router from "next/router";
 
 const Settings = () => (
   <Layout>
@@ -12,26 +13,46 @@ const Settings = () => (
             >
               Settings
             </span>
-          </div>
-          <div className="mt-5">
-            <style jsx>{`
-              span:hover {
-                padding-bottom: 0.6em;
-                color: white;
-                border-bottom: 3px solid white;
-              }
-              li {
-                padding-bottom: 0.5em;
-                padding-right: 3em;
+            <div>
+              <ul className="text-xl mt-10">
+                <li className="mt-4 cursor-pointer">
+                  <a onClick={() => Router.push("/UserProfile")}>Profile</a>
+                </li>
+                <li className="mt-4 cursor-pointer">
+                  <a href="#">Billing Information</a>
+                </li>
+                <li className="mt-4 cursor-pointer">
+                  <a href="#">Manage Devices</a>
+                </li>
+                <li className="mt-4 cursor-pointer">
+                  <a href="#">Parental Controls</a>
+                </li>
+                <li className="mt-4">
+                  <a href="#">Video Playback</a>
+                </li>
+                <li className="mt-4">
+                  <a href="#">Notifications</a>
+                </li>
+              </ul>
+            </div>
 
-                color: rgb(179, 179, 179);
-              }
-
-              ul {
-                border-bottom: 1px solid rgb(211, 211, 211);
-              }
-            `}</style>
+            <div>
+              <ul className="text-xl mt-10">
+                <li className="mt-4">
+                  <a href="#">Help</a>
+                </li>
+                <li className="mt-4">
+                  <a href="#">Privacy</a>
+                </li>
+                <li className="mt-4">
+                  <a href="#">Terms of Use</a>
+                </li>
+              </ul>
+              <button className="mt-6 p-2 bg-white text-black">Sign Out</button>
+            </div>
+            <p className="text-sm mt-10">Version 0.0.0.1</p>
           </div>
+          <div className="mt-5" />
         </div>
       </div>
     </div>

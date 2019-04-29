@@ -52,7 +52,7 @@ const Categories = () => {
         </div>
         <div className=" px-4 pb-6">
           <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom">
-            <img src="/static/logos/marvel_logo.svg" alt="marvel_logo" />
+            <img src="/static/logos/marvel_logo_white.svg" alt="marvel_logo" />
           </a>
         </div>
         <div className=" px-4 pb-6">

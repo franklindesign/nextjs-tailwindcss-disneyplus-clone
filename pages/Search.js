@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import RecommendedCarousel from "../components/RecommendedCarousel";
 
 const Search = () => (
   <Layout>
@@ -14,24 +15,13 @@ const Search = () => (
             </span>
           </div>
           <div className="mt-5">
-            <style jsx>{`
-              span:hover {
-                padding-bottom: 0.6em;
-                color: white;
-                border-bottom: 3px solid white;
-              }
-              li {
-                padding-bottom: 0.5em;
-                padding-right: 3em;
-
-                color: rgb(179, 179, 179);
-              }
-
-              ul {
-                border-bottom: 1px solid rgb(211, 211, 211);
-              }
-            `}</style>
+            <input
+              placeholder="Search series or movies"
+              type="text"
+              className="text-black p-3 md:w-1/2 w-full"
+            />
           </div>
+          <RecommendedCarousel />
         </div>
       </div>
     </div>

@@ -21,10 +21,10 @@ const HeroCarousel = () => {
       <div>
         <img src="/static/slides/slide4.jpg" alt="Captain Marvel" />
         <button
-          onClick={() => Router.push("/CaptainMarvel")}
+          onClick={() => Router.push("/Movies/CaptainMarvel")}
           className=" w-1/4 legend"
         >
-          Watch
+          Explore
         </button>
       </div>
       <div>

@@ -50,7 +50,24 @@ const CaptainAmericaScreens = () => {
           />
         </div>
         <div className="shadow-xl px-2 py-2">
-          <a href="#">
+          <a>
+            <img
+              src="/static/extras/captain-marvel/extra06.jpg"
+              alt="snow_white"
+            />
+          </a>
+        </div>
+
+        <div className="shadow-xl px-2 py-2">
+          <a>
+            <img
+              src="/static/extras/captain-marvel/extra02.jpg"
+              alt="spiderman-homecoming"
+            />
+          </a>
+        </div>
+        <div className="shadow-xl px-2 py-2">
+          <a>
             <img
               src="/static/extras/captain-marvel/extra01.jpg"
               alt="star_wars_a_new_hope"
@@ -58,16 +75,7 @@ const CaptainAmericaScreens = () => {
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img
-              src="/static/extras/captain-marvel/extra02.jpg"
-              alt="spiderman-homecoming"
-            />
-          </a>
-        </div>
-
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
+          <a>
             <img
               src="/static/extras/captain-marvel/extra03.jpg"
               alt="snow_white"
@@ -75,17 +83,17 @@ const CaptainAmericaScreens = () => {
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
-          <a href="#">
+          <a>
             <img
-              src="/static/extras/captain-marvel/extra03.jpg"
+              src="/static/extras/captain-marvel/extra04.jpg"
               alt="snow_white"
             />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
-          <a href="#">
+          <a>
             <img
-              src="/static/extras/captain-marvel/extra03.jpg"
+              src="/static/extras/captain-marvel/extra05.jpg"
               alt="snow_white"
             />
           </a>
