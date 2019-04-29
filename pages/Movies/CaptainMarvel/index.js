@@ -1,34 +1,32 @@
-import Layout from "../components/Layout";
+import CaptainAmericaScreens from "./Screens";
+import Layout from "../../../components/Layout";
+import Dropdown from "react-dropdown";
+import "react-dropdown/style.css";
 
-const background = {
-  root: {
-    background: `url("/static/background/captain-marvel.jpg")`
-  }
+const options = ["Extras", "Previews", "Details"];
+
+const hero = {
+  backgroundImage: "url(/static/background/captain-marvel.jpg)",
+  backgroundPosition: "center top",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  height: "100vh"
 };
 
 const CaptainMarvel = () => (
   <Layout>
     <div id="outer-container" className="flex text-white min-h-screen">
       <div id="page-wrap" className="w-full  ">
-        <div className="mx-auto" style={background}>
-          <div
-            className="mt-10 pt-10"
-            style={{
-              backgroundImage: "url(/static/background/captain-marvel.jpg)",
-              backgroundPosition: "center top",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              height: "800px"
-            }}
-          >
-            <div className="mt-20">
+        <div className="mx-auto">
+          <div className="mt-10 pt-10 hero" style={hero}>
+            <div className="logoReveal">
               <img
-                className="lg:ml-10 ml-2 mt-20 pt-10"
+                className="lg:ml-10 ml-2 pt-40 mt-40 md:mt-20 md:pt-10"
                 src="/static/background/captain-marvel-logo.png"
                 alt="captain-marvel-logo"
               />
             </div>
-            <div className="flex">
+            <div className="flex mt-10 sm:mt-20">
               <button
                 className="ml-10 uppercase sm:ml-20 playbutton"
                 style={{
@@ -60,45 +58,44 @@ const CaptainMarvel = () => (
               universe's most powerful heroes.
             </p>
           </div>
-          <div className="mt-16">
-            <ul className="flex ml-20">
-              <li className="pr-10">
+          <div className="mt-16 md:mx-10 mx-5">
+            <Dropdown
+              options={options}
+              placeholder="Select Section"
+              className="sm:hidden  "
+            />
+            <ul className="md:flex md:mx-10 font-semibold hidden  ">
+              <li className="pr-10 cursor-pointer">
                 <span>EXTRAS</span>
               </li>
-              <li className="px-10">
+              <li className="px-10 cursor-pointer">
                 <span>PREVIEWS</span>
               </li>
-              <li className="px-10">
+              <li className="px-10 cursor-pointer">
                 <span>DETAILS</span>
               </li>
               <hr />
             </ul>
-            <div className="flex ml-20 m-5">
-              <img
-                className="pr-3"
-                src="../static/extras/captain-marvel/extra00.jpg"
-                alt="Captain Marvel extra 1"
-              />
-              <img
-                className="pr-3"
-                src="../static/extras/captain-marvel/extra01.jpg"
-                alt="Captain Marvel extra 1"
-              />
-              <img
-                className="pr-3"
-                src="../static/extras/captain-marvel/extra02.jpg"
-                alt="Captain Marvel extra 1"
-              />
-              <img
-                className="pr-3"
-                src="../static/extras/captain-marvel/extra03.jpg"
-                alt="Captain Marvel extra 1"
-              />
+            <div className="mx-10">
+              <CaptainAmericaScreens />
             </div>
           </div>
 
           <style jsx>
             {`
+              .hero {
+                animation: scaledown 1.5s ease-out;
+              }
+              @keyframes scaledown {
+                0% {
+                  transform: scale(1.1);
+                  opacity: 0;
+                }
+                100% {
+                  transform: scale(1);
+                  opacity: 1;
+                }
+              }
               span:hover {
                 padding-bottom: 0.6em;
                 color: white;

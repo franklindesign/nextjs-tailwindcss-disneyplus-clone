@@ -11,6 +11,7 @@
     "react": "^16.8.6",
     "react-burger-menu": "^2.6.9",
     "react-dom": "^16.8.6",
+    "react-dropdown": "^1.6.4",
     "react-responsive-carousel": "^3.1.49",
     "react-slick": "^0.24.0",
     "slick-carousel": "^1.8.1",

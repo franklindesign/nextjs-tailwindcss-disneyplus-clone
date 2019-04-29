@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 
-const TrendingNow = () => {
+const CaptainAmericaScreens = () => {
   const settings = {
     infinite: false,
     arrows: false,
@@ -8,7 +8,6 @@ const TrendingNow = () => {
     slidesToShow: 5,
     slidesToScroll: 1,
     speed: 500,
-    focusOnSelect: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -39,35 +38,56 @@ const TrendingNow = () => {
     ]
   };
   return (
-    <div className="mb-5">
-      <div className="recommended ml-2 mb-3">
-        <h2 className="text-gray-500 mb-1 font-light">Trending Now</h2>
+    <div className="mt-20">
+      <div className="recommended  ml-2 mb-3">
+        <h2 className="text-gray-500 mb-1 font-light">Screens</h2>
       </div>
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
-          <img src="/static/images/pixar-coco.jpg" alt="pixar-coco" />
+          <img
+            src="/static/extras/captain-marvel/extra00.jpg"
+            alt="avengers_infinity_war"
+          />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="/static/images/pixar-bao.jpg" alt="pixar-bao" />
+            <img
+              src="/static/extras/captain-marvel/extra01.jpg"
+              alt="star_wars_a_new_hope"
+            />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="/static/images/disney-bambi.jpg" alt="disney-bambi" />
+            <img
+              src="/static/extras/captain-marvel/extra02.jpg"
+              alt="spiderman-homecoming"
+            />
+          </a>
+        </div>
+
+        <div className="shadow-xl px-2 py-2">
+          <a href="#">
+            <img
+              src="/static/extras/captain-marvel/extra03.jpg"
+              alt="snow_white"
+            />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="/static/images/zootopia.jpg" alt="zootopia" />
+            <img
+              src="/static/extras/captain-marvel/extra03.jpg"
+              alt="snow_white"
+            />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
-          <img src="/static/images/black_panther.jpg" alt="black_panther" />
-        </div>
-        <div className="shadow-xl px-2 py-2">
           <a href="#">
-            <img src="/static/images/snow_white.jpg" alt="snow_white" />
+            <img
+              src="/static/extras/captain-marvel/extra03.jpg"
+              alt="snow_white"
+            />
           </a>
         </div>
       </Slider>
@@ -75,4 +95,4 @@ const TrendingNow = () => {
   );
 };
 
-export default TrendingNow;
+export default CaptainAmericaScreens;

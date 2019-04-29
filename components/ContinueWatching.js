@@ -39,14 +39,14 @@ const ContinueWatching = () => {
     ]
   };
   return (
-    <div>
-      <div className="recommended ml-2 mb-3">
+    <div className="mb-5">
+      <div className="recommended ml-2 mt-5">
         <h2 className="text-gray-500 mb-1 font-light">Continue Watching</h2>
       </div>
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
           <img
-            onClick={() => Router.push("/CaptainMarvel")}
+            onClick={() => Router.push("/Movies/CaptainMarvel")}
             src="/static/images/marvel-captain-marvel.jpg"
             alt="marvel-captain-marvel"
           />

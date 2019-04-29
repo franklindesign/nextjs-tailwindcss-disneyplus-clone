@@ -2,6 +2,19 @@ import Layout from "../components/Layout";
 import RecommendedCarousel from "../components/RecommendedCarousel";
 import TrendingNow from "../components/TrendingNow";
 import DisneyOriginals from "../components/DisneyOriginals";
+import Dropdown from "react-dropdown";
+import "react-dropdown/style.css";
+
+const options = [
+  "Featured",
+  "A-Z",
+  "Originals",
+  "Action/Adventure",
+  "Comedy",
+  "SciFi/Fantasy",
+  "Shorts",
+  "Kids"
+];
 
 const Movies = () => (
   <Layout>
@@ -17,6 +30,12 @@ const Movies = () => (
             </span>
           </div>
           <div className="mt-5">
+            <Dropdown
+              options={options}
+              placeholder="Select movie category"
+              className="sm:hidden"
+            />
+
             <ul className="md:flex font-semibold hidden">
               <li>
                 <span>Featured</span>
@@ -60,7 +79,6 @@ const Movies = () => (
                 border-bottom: 1px solid rgb(211, 211, 211);
               }
             `}</style>
-
             <RecommendedCarousel />
             <TrendingNow />
             <DisneyOriginals />

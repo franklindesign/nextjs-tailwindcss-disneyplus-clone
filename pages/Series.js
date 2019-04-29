@@ -1,4 +1,17 @@
 import Layout from "../components/Layout";
+import Dropdown from "react-dropdown";
+import "react-dropdown/style.css";
+
+const options = [
+  "Featured",
+  "A-Z",
+  "Originals",
+  "Action/Adventure",
+  "Comedy",
+  "SciFi/Fantasy",
+  "Shorts",
+  "Kids"
+];
 
 const Series = () => (
   <Layout>
@@ -14,6 +27,11 @@ const Series = () => (
             </span>
           </div>
           <div className="mt-5">
+            <Dropdown
+              options={options}
+              placeholder="Select movie category"
+              className="sm:hidden"
+            />
             <ul className="md:flex font-semibold hidden">
               <li>
                 <span>Featured</span>

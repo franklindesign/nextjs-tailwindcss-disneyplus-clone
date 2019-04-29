@@ -14,9 +14,9 @@ const Watchlist = () => (
             >
               Watchlist
             </span>
-            <UserWatchlist />
           </div>
-          <div className="mt-5">
+          <div className="mt-10">
+            <UserWatchlist />
             <style jsx>{`
               span:hover {
                 padding-bottom: 0.6em;

@@ -38,7 +38,7 @@ const RecommendedCarousel = () => {
     ]
   };
   return (
-    <div className="mt-20">
+    <div className="mt-10">
       <div className="recommended  ml-2 mb-3">
         <h2 className="text-gray-500 mb-1 font-light">Recommended For You</h2>
       </div>

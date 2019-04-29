@@ -38,7 +38,7 @@ const ActionAdventure = () => {
     ]
   };
   return (
-    <div>
+    <div className="mb-5">
       <div className="recommended ml-2 mb-3">
         <h2 className="text-gray-500 mb-1 font-light">Action/Adventure</h2>
       </div>
