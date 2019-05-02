@@ -1,5 +1,4 @@
 import { Carousel } from "react-responsive-carousel";
-import Router from "next/router";
 
 const HeroCarousel = () => {
   return (

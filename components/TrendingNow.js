@@ -1,3 +1,5 @@
+import Router from "next/router";
+
 import Slider from "react-slick";
 
 const TrendingNow = () => {
@@ -63,7 +65,11 @@ const TrendingNow = () => {
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
-          <img src="/static/images/black_panther.jpg" alt="black_panther" />
+          <img
+            onClick={() => Router.push("/Movies/BlackPanther")}
+            src="/static/images/black_panther.jpg"
+            alt="black_panther"
+          />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a href="#">

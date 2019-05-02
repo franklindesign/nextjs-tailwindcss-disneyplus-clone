@@ -45,40 +45,52 @@ const CaptainAmericaScreens = () => {
       </div>
       <Slider {...settings}>
         <div className="shadow-xl px-2 py-2">
-          <img
-            src="/static/extras/captain-marvel/extra00.jpg"
-            alt="avengers_infinity_war"
-          />
+          <img src="/static/extras/black-panther/extra000.jpg" alt="screen1" />
         </div>
         <div className="shadow-xl px-2 py-2">
           <a>
-            <img src="/static/extras/captain-marvel/extra06.jpg" alt="extra6" />
+            <img src="/static/extras/black-panther/extra00.jpg" alt="extra " />
           </a>
         </div>
 
         <div className="shadow-xl px-2 py-2">
           <a>
-            <img src="/static/extras/captain-marvel/extra02.jpg" alt="extra2" />
+            <img src="/static/extras/black-panther/extra01.jpg" alt="extra1" />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a>
-            <img src="/static/extras/captain-marvel/extra01.jpg" alt="extra1" />
+            <img src="/static/extras/black-panther/extra02.jpg" alt="extra2" />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a>
-            <img src="/static/extras/captain-marvel/extra03.jpg" alt="extra3" />
+            <img src="/static/extras/black-panther/extra03.jpg" alt="extra3" />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a>
-            <img src="/static/extras/captain-marvel/extra04.jpg" alt="extra4" />
+            <img src="/static/extras/black-panther/extra04.jpg" alt="extra4" />
           </a>
         </div>
         <div className="shadow-xl px-2 py-2">
           <a>
-            <img src="/static/extras/captain-marvel/extra05.jpg" alt="extra5" />
+            <img src="/static/extras/black-panther/extra05.jpg" alt="extra5" />
+          </a>
+        </div>
+        <div className="shadow-xl px-2 py-2">
+          <a>
+            <img src="/static/extras/black-panther/extra06.jpg" alt="extra6" />
+          </a>
+        </div>
+        <div className="shadow-xl px-2 py-2">
+          <a>
+            <img src="/static/extras/black-panther/extra07.jpg" alt="extra7" />
+          </a>
+        </div>
+        <div className="shadow-xl px-2 py-2">
+          <a>
+            <img src="/static/extras/black-panther/extra08.jpg" alt="extra8" />
           </a>
         </div>
       </Slider>
