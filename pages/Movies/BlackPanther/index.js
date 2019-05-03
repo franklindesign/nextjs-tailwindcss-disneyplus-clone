@@ -1,4 +1,4 @@
-import CaptainAmericaScreens from "./Screens";
+import BlackPantherScreens from "./Screens";
 import Layout from "../../../components/Layout";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
@@ -80,7 +80,7 @@ const BlackPanther = () => (
               </li>
               <hr />
             </ul>
-            <CaptainAmericaScreens />
+            <BlackPantherScreens />
           </div>
 
           <style jsx>

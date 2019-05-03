@@ -1,0 +1,31 @@
+.slides .slick-prev,
+.slides .slick-next {
+  border: 1px solid rgb(87, 87, 87);
+  color: gray;
+  height: 40px;
+  width: 100px;
+  padding: 5px;
+}
+.slides .slick-prev:hover,
+.slides .slick-next:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+.slides {
+  position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  bottom: -25px;
+}
+
+.slides .slick-prev {
+  left: 10px;
+}
+
+.slides .slick-next {
+  right: 10px;
+}

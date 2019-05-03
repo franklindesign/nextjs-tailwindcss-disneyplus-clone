@@ -1,13 +1,14 @@
 import Slider from "react-slick";
 
-const CaptainAmericaScreens = () => {
+const CaptainMarvelScreens = () => {
   const settings = {
     infinite: false,
-    arrows: false,
+    arrows: true,
     dots: false,
     slidesToShow: 5,
     slidesToScroll: 1,
     speed: 500,
+    className: "slides",
     responsive: [
       {
         breakpoint: 1024,
@@ -39,7 +40,7 @@ const CaptainAmericaScreens = () => {
   };
 
   return (
-    <div className="mt-20 sm:ml-10">
+    <div className="mt-20 mb-20 sm:ml-10">
       <div className="recommended  ml-2 mb-3">
         <h2 className="text-gray-500 mb-1 font-light">Screens</h2>
       </div>
@@ -86,4 +87,4 @@ const CaptainAmericaScreens = () => {
   );
 };
 
-export default CaptainAmericaScreens;
+export default CaptainMarvelScreens;

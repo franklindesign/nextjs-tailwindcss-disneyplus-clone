@@ -4,9 +4,11 @@ import ContinueWatching from "./ContinueWatching";
 import DisneyOriginals from "./DisneyOriginals";
 import TrendingNow from "./TrendingNow";
 import Categories from "./Categories";
-import "../node_modules/slick-carousel/slick/slick.css";
+import "../styles/slick.css";
 import "../styles/carousel.css";
 import "../styles/carousel.min.css";
+import "../styles/slides.css";
+
 import ActionAdventure from "./ActionAdventure";
 
 const Home = () => {

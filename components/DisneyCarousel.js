@@ -4,7 +4,8 @@ import Slider from "react-slick";
 const DisneyCarousel = () => {
   const settings = {
     infinite: false,
-    arrows: false,
+    arrows: true,
+    className: "slides",
     dots: false,
     slidesToShow: 5,
     slidesToScroll: 1,

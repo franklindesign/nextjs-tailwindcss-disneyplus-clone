@@ -3,11 +3,12 @@ import Slider from "react-slick";
 const DisneyOriginals = () => {
   const settings = {
     infinite: false,
-    arrows: false,
+    arrows: true,
     dots: false,
     slidesToShow: 5,
     slidesToScroll: 1,
     speed: 500,
+    className: "slides",
     responsive: [
       {
         breakpoint: 1024,
@@ -38,7 +39,7 @@ const DisneyOriginals = () => {
     ]
   };
   return (
-    <div className="mb-5">
+    <div className="mb-16">
       <div className="recommended ml-2 mb-3">
         <h2 className="text-gray-500 mb-1 font-light">Disney+ Originals</h2>
       </div>
