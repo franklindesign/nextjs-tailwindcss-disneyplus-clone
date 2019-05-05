@@ -38,47 +38,38 @@ const ActionAdventure = () => {
       }
     ]
   };
+  const titles = [
+    {
+      title: "Star Wars: Return of the Jedi",
+      src: "/static/images/starwars-returnofthejedi.jpg",
+      link: "/"
+    },
+    { title: "Tarzan", src: "/static/images/disney-tarzan.jpg", link: "/" },
+    {
+      title: "Guardian's of the Galaxy",
+      src: "/static/images/marvel-guardians-of-the-galaxy.jpg",
+      link: "/"
+    },
+    {
+      title: "The Incredibles",
+      src: "/static/images/pixar-incredibles.jpg",
+      link: "/"
+    },
+    { title: "Ironman", src: "/static/images/marvel-ironman.jpg", link: "/" },
+    { title: "Zootopia", src: "/static/images/zootopia.jpg", link: "/" }
+  ];
+
   return (
     <div className="mb-16">
       <div className="recommended ml-2 mb-3">
         <h2 className="text-gray-500 mb-1 font-light">Action/Adventure</h2>
       </div>
       <Slider {...settings}>
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img
-              src="./static/images/starwars-returnofthejedi.jpg"
-              alt="starwars-returnofthejedi"
-            />
-          </a>
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img src="/static/images/disney-tarzan.jpg" alt="disney-tarzan" />
-          </a>
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <img
-            src="/static/images/marvel-guardians-of-the-galaxy.jpg"
-            alt="marvel-guardians-of-the-galaxy.jpg"
-          />
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img
-              src="/static/images/pixar-incredibles.jpg"
-              alt="pixar-incredibles"
-            />
-          </a>
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <img src="/static/images/marvel-ironman.jpg" alt="marvel-ironman" />
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img src="/static/images/zootopia.jpg" alt="zootopia" />
-          </a>
-        </div>
+        {titles.map(t => (
+          <div className="shadow-xl px-2 py-2 cursor-pointer">
+            <img src={t.src} alt={t.title} key={t.title} />
+          </div>
+        ))}
       </Slider>
     </div>
   );

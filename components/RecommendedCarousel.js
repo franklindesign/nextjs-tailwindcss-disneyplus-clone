@@ -38,51 +38,36 @@ const RecommendedCarousel = () => {
       }
     ]
   };
+
+  const recommended = [
+    {
+      title: "Avenger's Infinity War",
+      src: "/static/images/avengers_infinity_war.jpg"
+    },
+    {
+      title: "Star Wars A New Hope",
+      src: "/static/images/star_wars_a_new_hope.jpg"
+    },
+    {
+      title: "Spiderman: Homecoming",
+      src: "/static/images/spiderman-homecoming.jpg"
+    },
+    { title: "Snow White", src: "/static/images/snow_white.jpg" },
+    { title: "One Strange Rock", src: "/static/images/one_strange_rock.jpg" },
+    { title: "Zootopia", src: "/static/images/zootopia.jpg" }
+  ];
+
   return (
     <div className="mt-10 mb-16">
       <div className="ml-2 mb-3">
         <h2 className="text-gray-500 mb-1 font-light">Recommended For You</h2>
       </div>
       <Slider {...settings}>
-        <div className="shadow-xl px-2 py-2">
-          <img
-            src="/static/images/avengers_infinity_war.jpg"
-            alt="avengers_infinity_war"
-          />
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img
-              src="/static/images/star_wars_a_new_hope.jpg"
-              alt="star_wars_a_new_hope"
-            />
-          </a>
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img
-              src="/static/images/spiderman-homecoming.jpg"
-              alt="spiderman-homecoming"
-            />
-          </a>
-        </div>
-
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img src="/static/images/snow_white.jpg" alt="snow_white" />
-          </a>
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <img
-            src="/static/images/one_strange_rock.jpg"
-            alt="one_strange_rock"
-          />
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img src="/static/images/zootopia.jpg" alt="zootopia" />
-          </a>
-        </div>
+        {recommended.map(rec => (
+          <div className="shadow-xl px-2 py-2 cursor-pointer">
+            <img src={rec.src} alt={rec.title} key={rec.title} />
+          </div>
+        ))}
       </Slider>
     </div>
   );

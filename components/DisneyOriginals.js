@@ -38,49 +38,42 @@ const DisneyOriginals = () => {
       }
     ]
   };
+
+  const originals = [
+    {
+      title: "High School Musical",
+      src: "/static/originals/high-school-musical.jpg",
+      link: "/"
+    },
+    {
+      title: "Lady and The Tramp",
+      src: "/static/originals/lady-and-the-tramp.jpg",
+      link: "/"
+    },
+    {
+      title: "The Mandalorian",
+      src: "/static/originals/the-mandalorian.jpg",
+      link: "/"
+    },
+    {
+      title: "The World According to Jeff Goldblum",
+      src: "/static/originals/the-world-according-to-jeff-goldblum.jpg",
+      link: "/"
+    },
+    { title: "Encore", src: "/static/originals/encore.jpg", link: "/" },
+    { title: "", src: "/static/originals/hero-project.jpg", link: "/" }
+  ];
   return (
     <div className="mb-16">
       <div className="recommended ml-2 mb-3">
         <h2 className="text-gray-500 mb-1 font-light">Disney+ Originals</h2>
       </div>
       <Slider {...settings}>
-        <div className="shadow-xl px-2 py-2">
-          <img
-            src="/static/originals/high-school-musical.jpg"
-            alt="high-school-musical"
-          />
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img
-              src="/static/originals/lady-and-the-tramp.jpg"
-              alt="lady-and-the-tramp"
-            />
-          </a>
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img
-              src="/static/originals/the-mandalorian.jpg"
-              alt="the-mandalorian"
-            />
-          </a>
-        </div>
-
-        <div className="shadow-xl px-2 py-2">
-          <a href="#">
-            <img
-              src="/static/originals/the-world-according-to-jeff-goldblum.jpg"
-              alt="the-world-according-to-jeff-goldblum"
-            />
-          </a>
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <img src="/static/originals/encore.jpg" alt="encore" />
-        </div>
-        <div className="shadow-xl px-2 py-2">
-          <img src="/static/originals/hero-project.jpg" alt="hero-project" />
-        </div>
+        {originals.map(o => (
+          <div className="shadow-xl px-2 py-2 cursor-pointer">
+            <img src={o.src} alt={o.title} key={o.title} />
+          </div>
+        ))}
       </Slider>
     </div>
   );

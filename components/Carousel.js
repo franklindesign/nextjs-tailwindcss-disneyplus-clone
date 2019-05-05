@@ -1,6 +1,13 @@
 import { Carousel } from "react-responsive-carousel";
 
 const HeroCarousel = () => {
+  const slides = [
+    { title: "Avengers: Endgame", src: "/static/slides/slide3.jpg", link: "/" },
+    { title: "Toy Story 4", src: "/static/slides/slide2.jpg", link: "/" },
+    { title: "Captain Marvel", src: "/static/slides/slide4.jpg", link: "/" },
+    { title: "The Mandalorian", src: "/static/slides/slide1.jpg", link: "/" }
+  ];
+
   return (
     <Carousel
       showThumbs={false}
@@ -11,18 +18,11 @@ const HeroCarousel = () => {
       infiniteLoop
       className="carouselSelect"
     >
-      <div>
-        <img src="/static/slides/slide3.jpg" alt="Avengers: Endgame" />
-      </div>
-      <div>
-        <img src="/static/slides/slide2.jpg" alt="Toy Story 4" />
-      </div>
-      <div>
-        <img src="/static/slides/slide4.jpg" alt="Captain Marvel" />
-      </div>
-      <div>
-        <img src="/static/slides/slide1.jpg" alt="Mandalorian" />
-      </div>
+      {slides.map(s => (
+        <div>
+          <img src={s.src} alt={s.title} key={s.title} />
+        </div>
+      ))}
     </Carousel>
   );
 };

@@ -1,6 +1,31 @@
 import Layout from "../components/Layout";
 import "../styles/originals.css";
 
+const originalTitles = [
+  {
+    title: "High School Musical",
+    src: "/static/originals/high-school-musical.jpg",
+    link: "/"
+  },
+  {
+    title: "Lady and The Tramp",
+    src: "/static/originals/lady-and-the-tramp.jpg",
+    link: "/"
+  },
+  {
+    title: "The Mandalorian",
+    src: "/static/originals/the-mandalorian.jpg",
+    link: "/"
+  },
+  {
+    title: "The World According to Jeff Goldblum",
+    src: "/static/originals/the-world-according-to-jeff-goldblum.jpg",
+    link: "/"
+  },
+  { title: "Encore", src: "/static/originals/encore.jpg", link: "/" },
+  { title: "", src: "/static/originals/hero-project.jpg", link: "/" }
+];
+
 const Originals = () => (
   <Layout>
     <div id="outer-container" className="flex   text-white min-h-screen">
@@ -20,49 +45,11 @@ const Originals = () => (
               </div>
             </div>
             <div className="flex flex-wrap flex-col md:flex-row lg:flex-row ">
-              <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2">
-                <img
-                  src="/static/originals/the-mandalorian.jpg"
-                  alt="the-mandalorian"
-                  className="select"
-                />
-              </div>
-              <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2">
-                <img
-                  src="/static/originals/lady-and-the-tramp.jpg"
-                  alt="lady-and-the-tramp"
-                  className="select"
-                />
-              </div>
-              <div className="sm:w-1/1 md:w-1/2 lg:w-1/3 px-2 my-2">
-                <img
-                  src="/static/originals/hero-project.jpg"
-                  alt="hero-project"
-                  className="select"
-                />
-              </div>
-
-              <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2">
-                <img
-                  src="/static/originals/encore.jpg"
-                  alt="encore"
-                  className="select"
-                />
-              </div>
-              <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2 ">
-                <img
-                  src="/static/originals/high-school-musical.jpg"
-                  alt="high-school-musical"
-                  className="select"
-                />
-              </div>
-              <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2">
-                <img
-                  src="/static/originals/the-world-according-to-jeff-goldblum.jpg"
-                  alt="the-world-according-to-jeff-goldblum"
-                  className="select"
-                />
-              </div>
+              {originalTitles.map(o => (
+                <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2 ">
+                  <img src={o.src} alt={o.title} className="select" />
+                </div>
+              ))}
             </div>
           </div>
         </div>

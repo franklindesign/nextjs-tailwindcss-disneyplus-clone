@@ -37,37 +37,29 @@ const Categories = () => {
       }
     ]
   };
+
+  const companies = [
+    { name: "Disney", src: "/static/logos/disney_logo.svg", link: "/" },
+    { name: "Pixar", src: "/static/logos/pixar_logo.svg", link: "/" },
+    { name: "Marvel", src: "/static/logos/marvel_logo_white.svg", link: "/" },
+    { name: "Star Wars", src: "/static/logos/star_wars_logo.svg", link: "/" },
+    {
+      name: "National Geographic",
+      src: "/static/logos/national_geographic_logo.svg",
+      link: "/"
+    }
+  ];
+
   return (
     <div>
       <Slider {...settings}>
-        <div className="px-4 pb-6">
-          <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom">
-            <img src="/static/logos/disney_logo.svg" alt="disney" />
-          </a>
-        </div>
-        <div className=" px-4 pb-6">
-          <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom">
-            <img src="/static/logos/pixar_logo.svg" alt="pixar_logo" />
-          </a>
-        </div>
-        <div className=" px-4 pb-6">
-          <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom">
-            <img src="/static/logos/marvel_logo_white.svg" alt="marvel_logo" />
-          </a>
-        </div>
-        <div className=" px-4 pb-6">
-          <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom">
-            <img src="/static/logos/star_wars_logo.svg" alt="star_wars_logo" />
-          </a>
-        </div>
-        <div className="  px-4 pb-6">
-          <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom">
-            <img
-              src="/static/logos/national_geographic_logo.svg"
-              alt="national_geographic_logo"
-            />
-          </a>
-        </div>
+        {companies.map(c => (
+          <div className="px-4 pb-6">
+            <a className="bg-gray-800 h-32 flex justify-center items-center rounded-lg border border-gray-700 p-4 hover:bg-gray-700 shadow-custom cursor-pointer">
+              <img src={c.src} alt={c.name} key={c.name} />
+            </a>
+          </div>
+        ))}
       </Slider>
     </div>
   );

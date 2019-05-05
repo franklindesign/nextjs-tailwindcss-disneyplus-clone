@@ -1,41 +1,42 @@
 const UserWatchlist = () => {
-  const watchtitles = [
+  const watchTitles = [
     {
       title: "The Mandalorian",
-      image: "/static/originals/the-mandalorian.jpg"
+      image: "/static/originals/the-mandalorian.jpg",
+      link: "/"
     },
     {
       title: "Lady and the Tramp",
-      image: "/static/originals/lady-and-the-tramp.jpg"
+      image: "/static/originals/lady-and-the-tramp.jpg",
+      link: "/"
     },
     {
       title: "Hero Project",
-      image: "/static/originals/hero-project.jpg"
+      image: "/static/originals/hero-project.jpg",
+      link: "/"
     },
     {
       title: "Encore",
-      image: "/static/originals/encore.jpg"
+      image: "/static/originals/encore.jpg",
+      link: "/"
     },
     {
       title: "High School Musical",
-      image: "/static/originals/high-school-musical.jpg"
+      image: "/static/originals/high-school-musical.jpg",
+      link: "/"
     },
     {
       title: "The World According to Jeff Goldblum",
-      image: "/static/originals/the-world-according-to-jeff-goldblum.jpg"
+      image: "/static/originals/the-world-according-to-jeff-goldblum.jpg",
+      link: "/"
     }
   ];
 
   return (
     <div className="flex flex-wrap flex-col md:flex-row lg:flex-row ">
-      {watchtitles.map(watchtitle => (
+      {watchTitles.map(w => (
         <div className="sm:w-1/1 md:w-1/2 lg:w-1/3  px-2 my-2">
-          <img
-            src={watchtitle.image}
-            alt={watchtitle.title}
-            className="select"
-            key={watchtitle.title}
-          />
+          <img src={w.image} alt={w.title} className="select" key={w.title} />
         </div>
       ))}
       <style jsx>{`
