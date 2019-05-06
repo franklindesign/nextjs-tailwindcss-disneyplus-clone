@@ -76,8 +76,8 @@ const DisneyCarousel = () => {
       </div>
       <Slider {...settings}>
         {titles.map(title => (
-          <div className="shadow-xl px-2 py-2 cursor-pointer">
-            <img src={title.src} alt={title.title} key={title.title} />
+          <div className="shadow-xl px-2 py-2 cursor-pointer" key={title.title}>
+            <img src={title.src} alt={title.title} />
           </div>
         ))}
       </Slider>
